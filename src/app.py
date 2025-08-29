@@ -46,7 +46,7 @@ st.markdown("""
 # Load resources
 @st.cache_resource
 def load_model():
-    with open('car_price_model.pkl', 'rb') as f:
+    with open('src/car_price_model.pkl', 'rb') as f:
         return pickle.load(f)
 
 @st.cache_resource
