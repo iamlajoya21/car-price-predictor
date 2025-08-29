@@ -51,17 +51,17 @@ def load_model():
 
 @st.cache_resource
 def load_encoders():
-    with open('label_encoders.pkl', 'rb') as f:
+    with open('src/label_encoders.pkl', 'rb') as f:
         return pickle.load(f)
 
 @st.cache_resource
 def load_distinct_values():
-    with open('distinct_values.pkl', 'rb') as f:
+    with open('src/distinct_values.pkl', 'rb') as f:
         return pickle.load(f)
 
 @st.cache_resource
 def load_electric_info():
-    with open('electric_car_info.pkl', 'rb') as f:
+    with open('src/electric_car_info.pkl', 'rb') as f:
         return pickle.load(f)
 
 try:
